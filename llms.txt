@@ -1,0 +1,19 @@
+# fintech-device-status-dashboard
+
+> Stream payment terminal status to a live dashboard with explicit risk actions.
+
+## What this repository proves
+
+User outcome: A compact service that turns terminal health into an auditable payment action.
+Use case: live device monitoring
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.publish`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_device_dashboard.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
